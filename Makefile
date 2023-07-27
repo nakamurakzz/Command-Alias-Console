@@ -1,5 +1,8 @@
 .PHONY: start build help
 DEFAULT: help
+dev:
+	air -c .air.toml
+
 start:
 	go run command_alias_console.go
 
